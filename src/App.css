@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 240px;
+}
+
+
+.custom-modal .ant-modal-content {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.custom-modal-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #ff69b4 0%, #8ec5fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-input {
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #d1c4e9;
+}
