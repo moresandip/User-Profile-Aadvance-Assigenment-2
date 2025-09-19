@@ -1,4 +1,4 @@
-.App {
+ .App {
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-/*   align-items: center; */
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -27,6 +27,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -63,4 +64,142 @@
   background: #f9f9f9;
   border-radius: 8px;
   border: 1px solid #d1c4e9;
+
+}
+
+
+/* Global styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+}
+
+
+/* Header */
+.ant-layout-header {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff !important;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Content */
+.ant-layout-content {
+  padding: 32px;
+}
+
+/* Centered loader */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+
+/* UserCard unique look */
+/* .user-card {
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: #ffffff !important;
+  border: 1px solid #e6e9f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+} */
+
+.user-card {
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: #fef9f9 !important;
+  border: 1px solid #ffd6e0;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(255,182,193,0.3);
+}
+
+
+.user-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-color: #8f94fb;
+}
+
+/* Card header */
+.user-card .ant-card-head-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4e54c8;
+}
+
+/* Card body */
+.user-card .ant-card-body {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Action buttons */
+.user-card .ant-btn {
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.user-card .ant-btn-primary {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  border: none;
+}
+
+.user-card .ant-btn-primary:hover {
+  opacity: 0.9;
+}
+
+.user-card .ant-btn-danger {
+  background: #ff4d4f;
+  border: none;
+}
+
+.user-card .ant-btn-danger:hover {
+  background: #e84142;
+}
+
+/* Modal */
+.ant-modal-content {
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.ant-modal-header {
+  border-radius: 12px 12px 0 0;
+  background: #4e54c8;
+}
+
+.ant-modal-title {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* Form inside modal */
+.edit-user-form .ant-form-item-label > label {
+  font-weight: 500;
+  color: #333;
+}
+
+.edit-user-form .ant-input {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.edit-user-form .ant-input:focus {
+  border-color: #8f94fb;
+  box-shadow: 0 0 4px rgba(143, 148, 251, 0.6);
 }
