@@ -42,7 +42,7 @@ function App() {
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
-      <Header style={{ color: "#fff", fontSize: 20 textAlign: "center"}}>User Profiles Advanced</Header>
+      <Header style={{ color: "#fff", fontSize: 20 textalign: "center"}}>User Profiles Advanced</Header>
       <Content style={{ padding: 24 }}>
         {loading ? (
           <div className="centered"><Spin size="large" /></div>
